@@ -8,23 +8,33 @@ MACHINES = {
 	:disks => {
 		:sata1 => {
 			:dfile => './sata1.vdi',
-			:size => 250,
+			:size => 220, # Megabytes
 			:port => 1
 		},
 		:sata2 => {
                         :dfile => './sata2.vdi',
-                        :size => 250, # Megabytes
+                        :size => 220,
 			:port => 2
 		},
                 :sata3 => {
                         :dfile => './sata3.vdi',
-                        :size => 250,
+                        :size => 220,
                         :port => 3
                 },
                 :sata4 => {
                         :dfile => './sata4.vdi',
-                        :size => 250, # Megabytes
+                        :size => 220,
                         :port => 4
+                },
+                :sata5 => {
+                        :dfile => './sata5.vdi',
+                        :size => 220,
+                        :port => 5
+                },
+                :sata6 => {
+                        :dfile => './sata6.vdi',
+                        :size => 220,
+                        :port => 6
                 }
 
 	}
@@ -72,4 +82,3 @@ Vagrant.configure("2") do |config|
       end
   end
 end
-
